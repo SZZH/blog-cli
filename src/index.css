@@ -1,0 +1,5 @@
+.box {
+  overflow: hidden;
+  will-change: auto;
+  background-image: url(./pic.jpg);
+}
