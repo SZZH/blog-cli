@@ -3,7 +3,8 @@ const webpack = require('webpack');
 const webpackDevMiddleware = require('webpack-dev-middleware');
 
 const app = express();
-const config = require('../config/webpack.config')
+const configInit = require('../config/webpack.config')
+const config = configInit({production: false})
 const compiler = webpack(config);
 
 app.use(
